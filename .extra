@@ -1,0 +1,24 @@
+# Bash Setting by ChongPeng
+
+# Shortcuts
+alias cwork="cd ~/Workspace"
+alias csource="cd ~/Workspace/Development/source"
+alias cinstall="cd ~/Workspace/Development/install"
+alias cbuild="cd ~/Workspace/Development/build"
+alias cdr="cd ~/Documents/Dropbox"
+alias cgr="cd ~/Drive"
+alias cdl="cd ~/Downloads"
+alias cdt="cd ~/Desktop"
+alias cpj="cd ~/Workspace/project"
+
+# export
+# python path
+export PYTHONSTARTUP="/Users/ChongPeng/.pystartup"
+export PYTHONPATH="/Users/ChongPeng/Workspace/pythonlib:$PYTHONPATH"
+export PATH="/Users/ChongPeng/anaconda/bin:$PATH"
+
+#git settup
+GIT_AUTHOR_NAME="Chong Peng"
+GIT_AUTHOR_EMAIL="pchong90@vt.edu"
+git config --global user.name $GIT_AUTHOR_NAME
+git config --global user.email $GIT_AUTHOR_EMAIL

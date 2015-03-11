@@ -1,3 +1,5 @@
+#set vim mode
+set -o vi
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
