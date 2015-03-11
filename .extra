@@ -10,3 +10,12 @@ alias cgr="cd ~/Drive"
 alias cdl="cd ~/Downloads"
 alias cdt="cd ~/Desktop"
 alias cpj="cd ~/Workspace/project"
+
+# export
+export PYTHONSTARTUP="~/.pystartup"
+
+#git settup
+GIT_AUTHOR_NAME="Chong Peng"
+GIT_AUTHOR_EMAIL="pchong90@vt.edu"
+git config --global user.name $GIT_AUTHOR_NAME
+git config --global user.email $GIT_AUTHOR_EMAIL
