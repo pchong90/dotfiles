@@ -7,15 +7,6 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias cwork="cd ~/Workspace"
-alias csource="cd ~/Workspace/Development/source"
-alias cinstall="cd ~/Workspace/Development/install"
-alias cbuild="cd ~/Workspace/Development/build"
-alias cdr="cd ~/Documents/Dropbox"
-alias cgr="cd ~/Drive"
-alias cdl="cd ~/Downloads"
-alias cdt="cd ~/Desktop"
-alias cpj="cd ~/Workspace/project"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -82,9 +73,9 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # JavaScriptCore REPL
-jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
-[ -e "${jscbin}" ] && alias jsc="${jscbin}";
-unset jscbin;
+#jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc";
+#[ -e "${jscbin}" ] && alias jsc="${jscbin}";
+#unset jscbin;
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
