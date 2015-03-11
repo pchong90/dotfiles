@@ -7,10 +7,15 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias cwork="cd ~/Workspace"
+alias csource="cd ~/Workspace/Development/source"
+alias cinstall="cd ~/Workspace/Development/install"
+alias cbuild="cd ~/Workspace/Development/build"
+alias cdr="cd ~/Documents/Dropbox"
+alias cgr="cd ~/Drive"
+alias cdl="cd ~/Downloads"
+alias cdt="cd ~/Desktop"
+alias cpj="cd ~/Workspace/project"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -45,7 +50,12 @@ alias week='date +%V'
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; pipupdate; pip3update; sudo gem update --system; sudo gem update'
+
+# update Python packages using pip
+alias pipupdate='pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U'
+alias pip3update='pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip3 install -U'
+
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -140,6 +150,3 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Easily switch between `io.js` and `Node.js`
-alias use-iojs="brew unlink node && brew link --force iojs"
-alias use-node="brew unlink iojs && brew link --force node"
