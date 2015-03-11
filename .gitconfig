@@ -121,10 +121,14 @@
 	changed = green
 	untracked = cyan
 
+[difftool]
+	prompt = false
+
 [diff]
 
 	# Detect copies as well as renames
 	renames = copies
+	tool = vimdiff
 
 [help]
 
@@ -135,6 +139,13 @@
 
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	# set vimdiff as mergetool
+	tool = vimdiff
+	conflictstyle = diff3
+
+[mergetool]
+	# no prompt for mergetool
+	prompt = false
 
 [push]
 

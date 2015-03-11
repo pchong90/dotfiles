@@ -1,0 +1,15 @@
+#!/bin/bash
+
+keyword=$1
+replace=$2
+count=1
+
+while (( $# )); do 
+    if [[ $count -gt 2 ]]; then
+        mv $1 $1.old
+        sed "s/$keyword/$replace/" $1.old > $1
+        rm $1.old
+    fi
+    count=$((count + 1))
+    shift
+done
