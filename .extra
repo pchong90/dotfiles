@@ -14,7 +14,7 @@ alias cpj="cd ~/Workspace/project"
 # export
 # python path
 export PYTHONSTARTUP="/Users/ChongPeng/.pystartup"
-export PYTHONPATH="/Users/ChongPeng/Workspace/pythonlib:$PYTHONPATH"
+export PYTHONPATH="/Users/ChongPeng/Workspace/WorkScripts:$PYTHONPATH"
 export PATH="/Users/ChongPeng/anaconda/bin:$PATH"
 
 #git settup
