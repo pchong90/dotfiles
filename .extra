@@ -1,21 +1,25 @@
 # Bash Setting by ChongPeng
+#
+# hyades package loading
+module load gcc
+module load mvapich
+module load cmake
+module load boost
+module load eigen
+
+source /hyades/home/software/intel/parallel_studio_xe_2013/composer_xe_2013_sp1.3.174/mkl/bin/mklvars.sh intel64 lp64 
+source /hyades/home/software/intel/parallel_studio_xe_2013/composer_xe_2013_sp1.3.174/tbb/bin/tbbvars.sh intel64 
 
 # Shortcuts
 alias cwork="cd ~/Workspace"
-alias csource="cd ~/Workspace/Development/source"
-alias cinstall="cd ~/Workspace/Development/install"
-alias cbuild="cd ~/Workspace/Development/build"
-alias cdr="cd ~/Documents/Dropbox"
-alias cgr="cd ~/Drive"
-alias cdl="cd ~/Downloads"
-alias cdt="cd ~/Desktop"
-alias cpj="cd ~/Workspace/project"
+alias csource="cd ~/Development/source"
+alias cinstall="cd ~/Development/install"
+alias cbuild="cd ~/Development/build"
 
 # export
 # python path
-export PYTHONSTARTUP="/Users/ChongPeng/.pystartup"
-export PYTHONPATH="/Users/ChongPeng/Workspace/pythonlib:$PYTHONPATH"
-export PATH="/Users/ChongPeng/anaconda/bin:$PATH"
+export PYTHONSTARTUP="/hyades/home/valeev/pchong/.pystartup"
+export PYTHONPATH="/hyades/home/valeev/pchong/Development/source/WorkScripts:$PYTHONPATH"
 
 #git settup
 GIT_AUTHOR_NAME="Chong Peng"
