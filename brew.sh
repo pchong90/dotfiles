@@ -24,6 +24,7 @@ brew install autoconf automake
 brew install mpich2
 brew install cmake
 brew install doxgen
+brew install tbb
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
