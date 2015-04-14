@@ -1,15 +1,15 @@
 # Bash Setting by ChongPeng
 
 # Shortcuts
-alias cwork="cd ~/Workspace"
-alias csource="cd ~/Workspace/Development/source"
-alias cinstall="cd ~/Workspace/Development/install"
-alias cbuild="cd ~/Workspace/Development/build"
-alias cdr="cd ~/Documents/Dropbox"
-alias cgr="cd ~/Drive"
-alias cdl="cd ~/Downloads"
-alias cdt="cd ~/Desktop"
-alias cpj="cd ~/Workspace/project"
+alias work="~/Workspace"
+alias source="~/Workspace/Development/source"
+alias install="~/Workspace/Development/install"
+alias build="~/Workspace/Development/build"
+alias dr="~/Documents/Dropbox"
+alias gr="~/Drive"
+alias dl="~/Downloads"
+alias dt="~/Desktop"
+alias pj="~/Workspace/project"
 
 # export
 # python path
