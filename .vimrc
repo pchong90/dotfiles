@@ -13,12 +13,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'itchyny/lightline.vim'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -79,6 +80,10 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+" set indent
+set autoindent
+set smartindent
+set cindent
 " Make tabs as wide as two spaces
 set tabstop=2
 set expandtab
