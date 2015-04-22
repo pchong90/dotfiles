@@ -84,6 +84,7 @@ set cursorline
 set autoindent
 set smartindent
 set cindent
+set shiftwidth=2
 " Make tabs as wide as two spaces
 set tabstop=2
 set expandtab
