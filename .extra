@@ -17,6 +17,8 @@ export PYTHONSTARTUP="/Users/ChongPeng/.pystartup"
 export PYTHONPATH="/Users/ChongPeng/Workspace/WorkScripts:$PYTHONPATH"
 export PATH="/Users/ChongPeng/anaconda/bin:$PATH"
 
+# set up
+alias fix='$(thefuck $(fc -ln -1))'
 
 # path
 export PATH="/usr/local/bin:$PATH"
