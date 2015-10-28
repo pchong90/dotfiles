@@ -11,6 +11,9 @@ alias cdl="cd ~/Downloads"
 alias cdt="cd ~/Desktop"
 alias cpj="cd ~/Workspace/project"
 
+#sudo echo /opt/homebrew/bin >/etc/paths.d/homebrew
+#sudo echo /opt/homebrew/share/man >/etc/manpaths.d/homebrew
+
 # export
 # python path
 export PYTHONSTARTUP="/Users/ChongPeng/.pystartup"
