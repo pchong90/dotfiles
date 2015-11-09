@@ -10,6 +10,9 @@ module load eigen
 source /hyades/home/software/intel/parallel_studio_xe_2013/composer_xe_2013_sp1.3.174/mkl/bin/mklvars.sh intel64 lp64 
 source /hyades/home/software/intel/parallel_studio_xe_2013/composer_xe_2013_sp1.3.174/tbb/bin/tbbvars.sh intel64 
 
+
+source ~/virtualenv/python2/bin/activate
+
 # Shortcuts
 alias cwork="cd ~/Workspace"
 alias csource="cd ~/Development/source"
@@ -20,6 +23,7 @@ alias cbuild="cd ~/Development/build"
 # python path
 export PYTHONSTARTUP="/hyades/home/valeev/pchong/.pystartup"
 export PYTHONPATH="/hyades/home/valeev/pchong/Development/source/WorkScripts:$PYTHONPATH"
+export PYTHONPATH="/hyades/home/valeev/pchong/local-site-packages/lib/python:${PYTHONPATH}"
 
 #git settup
 GIT_AUTHOR_NAME="Chong Peng"
