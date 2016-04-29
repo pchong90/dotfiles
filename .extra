@@ -10,9 +10,21 @@ alias cgr="cd ~/Drive"
 alias cdl="cd ~/Downloads"
 alias cdt="cd ~/Desktop"
 alias cpj="cd ~/Workspace/project"
+alias sshx11="ssh -Y -C -o CompressionLevel=9"
+
+if [ -f $(brew --prefix)/etc/bash_completion  ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 #sudo echo /opt/homebrew/bin >/etc/paths.d/homebrew
 #sudo echo /opt/homebrew/share/man >/etc/manpaths.d/homebrew
+
+# source intel
+source /opt/intel/bin/compilervars.sh intel64
+source /opt/intel/mkl/bin/mklvars.sh intel64
+source /opt/intel/tbb/bin/tbbvars.sh 
+source /opt/intel/ipp/bin/ippvars.sh 
+
 
 # export
 # python path

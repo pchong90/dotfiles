@@ -11,6 +11,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
